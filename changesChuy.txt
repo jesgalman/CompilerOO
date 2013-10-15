@@ -1,0 +1,30 @@
+Lexico.l
+
+usar tipos de estructura ej: "char" {printf("Token: identifier character value  %s\n", yytext); yylval.s = strdup(yytext); return CHAR;}
+
+
+
+
+
+Sintaxix .y
+
+%union {
+  char *s;
+  double d;
+  int i;
+} 
+
+replace: NAME_CM con id
+
+token <type> kdjd
+
+
+IMPORTS	: IMPORT NAME_CM SEMICOLON IMPORTS;
+IMPORTS : /* VACIO */; -> uno  o más
+
+
+METHODS : METHOD_ID SCOPE RETURN_TYPE NAME_CM OPEN_PAREN {storeFunctions($3,$4)} TYPE_PARAMS CLOSE_PAREN BLOC METHODS ;
+
+
+- que pueda recibir params vacíos
+- que empiece con method woa?

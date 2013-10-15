@@ -1,0 +1,11 @@
+Manual Flex_Bison
+
+1. Abrir nueva ventana Terminal.
+2. Navegar hasta el directorio del contenido del folder.
+3. Escribir la instrucción: gcc lex.yy.c Compiler_sintaxis.tab.c -o lexsin.exe
+
+4. Introducir en el terminal cada token válido en el lenguaje.
+5. El ejecutable generará errores cuando reciba un token no aceptado por el lenguaje. De lo contrario permitirá recibir más tokens.
+
+
+7. Las reglas de léxico, gramática y regex empleados se encuentran en Compiler_lexical.l y Compiler_sintaxis.y respectivamente.
